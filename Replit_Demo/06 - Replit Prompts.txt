@@ -1,0 +1,70 @@
+Build a Python Streamlit app for an "Agentic AI Demo". Do not create a React app.
+
+Requirements:
+
+1. Use Azure OpenAI (gpt-4o-mini)
+2. Load credentials from environment variables:
+   - AZURE_OPENAI_API_KEY
+   - AZURE_OPENAI_ENDPOINT
+   - AZURE_OPENAI_DEPLOYMENT
+   - AZURE_OPENAI_API_VERSION
+
+3. UI:
+   - Title: "Agentic AI for Leaders – Live Demo"
+   - Text input box for user query
+   - 4 buttons:
+     1. Basic Q&A
+     2. Knowledge Q&A
+     3. Estimation
+     4. Agent Mode
+
+4. Features:
+
+Basic Q&A:
+- Send user input to LLM
+
+Knowledge Q&A:
+- Use a hardcoded knowledge base about insurance:
+  - claims processing
+  - underwriting
+  - fraud detection
+- Pass it as context to LLM
+
+Estimation:
+- Inputs: complexity (low/medium/high), users (number)
+- Logic:
+  low=5000, medium=10000, high=20000
+  + 50 per user
+- Use LLM to explain the estimate
+
+Agent Mode:
+- Classify user input as "qa" or "estimate"
+- If estimate → calculate cost
+- Else → answer normally
+
+5. Use clean functions with short comments explaining each function.
+
+6. Use Streamlit layout with 4 columns for buttons.
+
+7. Make sure the app runs with:
+   streamlit run app.py --server.port 3000 --server.address 0.0.0.0
+   
+   
+Sample Questions:
+=================
+- Basic Q&A:
+What is claims processing?
+What is underwriting in insurance?
+Explain fraud detection in claims.
+What are the steps in claims processing?
+
+- Knowledge Q&A:
+What is claims processing?
+
+- Estimation:
+UI Parameters
+
+- Agent Mode:
+Estimate cost for a high complexity project with 500 users.
+How much will a medium complexity insurance system cost for 200 users?
+Give me cost estimate for low complexity with 50 users.
