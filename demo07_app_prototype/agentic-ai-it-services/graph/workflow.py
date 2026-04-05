@@ -12,18 +12,17 @@ def build_graph():
 
     graph = StateGraph(AgentState)
 
-    # Add nodes
-    graph.add_node("knowledge", knowledge_node)
-    graph.add_node("estimator", estimator_node)
-    graph.add_node("architect", architect_node)
-    graph.add_node("refiner", refiner_node)
+    # TODO: Add nodes for:
+    # knowledge, estimator, architect, refiner.
+    ___
 
-    # Define flow (sequential execution)
-    graph.set_entry_point("knowledge")
+    # TODO: Set the knwoledge node as entry point.
+    ___
 
-    graph.add_edge("knowledge", "estimator")
-    graph.add_edge("estimator", "architect")
-    graph.add_edge("architect", "refiner")
-    graph.add_edge("refiner", END)
+    # TODO: Define the edges (flow) between the nodes.
+    ___
+
+    # TODO: Set the refiner node as the exit point.
+    ___
 
     return graph.compile()

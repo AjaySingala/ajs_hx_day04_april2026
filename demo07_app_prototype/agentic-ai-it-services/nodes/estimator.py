@@ -4,33 +4,29 @@ from tools.estimator_tool import estimation_tool
 def estimator_node(state):
     """Estimator that can call external API via tool"""
 
-    requirement = state["requirement"]
+    # TODO: Extract the requirement from the state.
+    requirement = ___
 
     # Step 1: Ask LLM if tool should be used
+    # TODO: Call the llm with the requirement and ask it to decide whether to use estimation tool.
+    # If the estimation is required, it should respond "USE_TOOL", otherwise "NO_TOOL".
     decision = call_llm(
-        "You decide whether to use estimation tool.",
-        f"""
-Requirement:
-{requirement}
-
-If estimation is needed, respond ONLY with:
-USE_TOOL
-
-Otherwise respond:
-NO_TOOL
-"""
+        ___
     )
 
-    # Step 2: Tool execution path
-    if "USE_TOOL" in decision:
-        tool_result = estimation_tool(requirement)
 
-        return {"estimate": tool_result}
+    # Step 2: Tool execution path
+    # TODO: If LLM returns "USE_TOOL" call the estimation tool with the requirement.
+    # Return the tool result as the estimate.
+    ___
+
 
     # Step 3: Fallback to LLM estimation
+    # TODO: If LLM returns "NO_TOOL", call the LLM to get an estimate directly.
+    # Define the role as "software estimator".
+    # Provide the requirement in the prompt and ask for an effort estimation.
     response = call_llm(
-        "You are a software estimator.",
-        f"Estimate effort:\n{requirement}"
+        ___
     )
 
     return {"estimate": response}
