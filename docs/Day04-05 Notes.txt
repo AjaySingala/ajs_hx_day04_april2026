@@ -148,5 +148,47 @@ VS Code -> GitHub Copilot
 GPT 5.5 -> OpenAI -> DeepSeek
 
 
+MCP -> Model Context Protocol
+
+It would only answer from the data it has. If it does not have the data, it says "don't know".
+Evolved->
+if do not have data, they look for it over the internet.
+
+MCP -> Dynamically making calls to get things done.
+	- what tools/agents to use?
+	
+Comet -> Browser
+	- They offered Google to buy out Chrome
+	- MCP
+	- setup, coding, config -> dynamically.
+	
+Started a course on Coursera using Comet.
+	- to complete the entire course
+	- including exercises
+	- course completed, certificate was issued
+	
+Standard format for communication b/w apps.
+
+Asked comet to create intinerary for a vacation
+- book flight tickets
+- make hotel reservaions
+- reserve outings
+
+AI->
+ML
+DL
+Gen AI
+Agentic AI
+MCP
+Skills
+
+SKILL.md
+(english description of what you want to achieve)
+
+Tools that can tell you if an image/video is AI Generated or not.
+	- if text is AI generated or not
+	
+ITIL 
+TOGAF - The Open Group Archirtecture Framework
 
 
