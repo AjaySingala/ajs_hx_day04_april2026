@@ -1,0 +1,152 @@
+
+
+
+
+
+Project Structure
+agentic-ai-it-services/
+│
+├── app.py                          # Streamlit UI entry point
+├── .env
+├── requirements.txt
+│
+├── config/
+│   └── azure_openai.py             # Azure client setup
+│
+├── graph/
+│   ├── state.py                    # Shared state schema
+│   ├── workflow.py                 # LangGraph definition
+│
+├── nodes/
+│   ├── knowledge.py                # Node 1
+│   ├── estimator.py                # Node 2
+│   ├── architect.py                # Node 3
+│   ├── refiner.py                  # Node 4
+│
+├── services/
+│   └── llm_service.py              # Reusable LLM wrapper
+│   └── api_service.py              # Estimator API simulator
+│
+├── tools/
+│   └── estimator_tool.py           # Estimator Tool
+│
+└── utils/
+    └── prompts.py                  # Centralized prompts
+
+
+This "app", is not referring to any internal KB.
+There is no RAG.
+
+Base Model:
+- gpt-4o-mini
+- gpt-5
+- gpt-5.56
+- Llama3
+- claude sonnet 3.5
+- gemma
+
+Take the base model (Llama3), install it on a server (local, company's server - on-premise, cloud)
+You will write your code to refer to this "local" model.
+Fine-tuning of the base model on your enterprise data.
+- then use this fine-tuned model in your code
+- no longer using the base model.
+- you are using a "fine-tuned" (re-trained) model
+
+Phi3 (MS)
+FLAN-T5 (google)
+
+Tomcat -> web server -> host your web app.
+Ollama -> host for models
+
+2016-17:
+Amazon US - AI tool - screen job applications.
+for the next round of interview
+Over few months, people started complaining that Amazon is rejecting more women and colored people.
+Investigation:
+	- the data that was used to train the AI, had more data was about white men.
+	- the data was biased
+- stop using that AI tool
+
+Humans -> how do we learn -> from experience, observations, behavior of people around us.
+AI -> learns from DATA!!!!
+if the data is biased, outputs will also be biased.
+Garbage in, garbage out.
+
+Can AI make decisions?
+AI = chatbot => chatgpt, copilot
+suggestions. recommdations. NOT MAKING THE DECISION FOR YOU.
+A
+B
+C
+D
+E
+
+AI can make decision.
+- self driven cars
+- robots
+- defence (drones)
+
+Elon Musk -> event 
+Robots started walking into the hall - mingling with people
+
+OpenAI, Meta, MS -> Super Intelligence (AGI)
+Poaching -> "I, Robot"
+Will Smith
+Isaac Asimov
+
+Google -> Gemini
+guy -> addicted to Gemini
+
+Task -> 24 hours to complete
+with AI -> How long does it take?
+(Want to achieve) Measure -> 2 hours,  3 hours
+Actual -> it takes 16 hours -> not really achieved productivity improvement.
+How much time? -> 3months, 6 mos, 1 year
+
+Data:
+- what was before AI
+- what is after AI
+
+
+Value not always $$$$ -> Productivity.
+How is it helping the team/staff/emloyees/customers?
+is it improving the output / decision?
+it it doing it faster than before?
+
+Human aspect
+-> if your staff (humans) are not ready for AI, then it will have negative impact.
+AI Awareness
+- Taking them into confidence -> Do i lose my job?
+
+ROI -> Total Factor Productivity (TFP)
+If AI (tools, systems), they become expensive.
+On avg added 2% TFP
+1.25%, 1.5%
+
+Perplexity Pro FREE with my Airtel Postpaid ₹17k/
+Gemini FREE ₹18k
+chatGPT: Free ChatGPT Go (₹300)
+
+General Q&A, queries: GPT
+Research -> Perplexity -> Claude Sonnet
+	Perplexity API -> Claude Sonnet
+	Very powerful reasoning
+Complex research/statistical/code -> Claude
+Research - DeekSeek
+
+Cursor (IDE) -> VS Code -> Claude
+	- was forked from VS Code
+	
+Apples to Oranges
+Claude - model
+Cursor - IDE
+	- open source
+	- but you have to pay for the model to be used by cursor
+	- fork cursor repo -> create my own IDE
+
+VS Code -> GitHub Copilot
+GPT 5.5 -> OpenAI -> DeepSeek
+
+
+
+
